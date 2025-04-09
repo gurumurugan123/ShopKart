@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 {% extends 'shop/layouts/main.html'%}
 {% block tit%}
@@ -18,4 +19,26 @@
     </div>
 </section>
 
+=======
+
+{% extends 'shop/layouts/main.html'%}
+{% block tit%}
+<title>Register</title>
+{% endblock tit%}
+{% block content%}
+<section class="bg-light py-4 " >
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="mb-3">Cart</h4>
+                <hr style="border-color: #b8bfc2;">
+            </div>
+            {% for item in cart %}
+            {{item.product_id}}
+        {% endfor %}
+        </div>
+    </div>
+</section>
+
+>>>>>>> dfbf8a08ebd38d8e8e8caeb735fcc9b1ad2b644f
 {% endblock content%}

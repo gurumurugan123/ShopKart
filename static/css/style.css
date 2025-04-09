@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 .carousel-item img{
@@ -121,4 +122,129 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+=======
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.carousel-item img{
+    object-fit: cover;
+    object-position: top;
+    height: 80vh;
+    overflow: hidden;
+} 
+.card-img-top {
+    height: 200px; /* Set a uniform height for all images */
+    object-fit: contain; /* Ensures the entire image fits without being cropped */
+    width: 100%; /* Ensures images take full width */
+}
+
+
+/* Smooth transition for the entire card */
+.card {
+    overflow: hidden; /* Prevents content from overflowing */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Smooth transition for the card-body */
+.card-body {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* When hovering over the card, move it slightly up */
+.card:hover {
+    transform: translateY(-5px); /* Moves the whole card slightly up */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Adds a shadow for a lifting effect */
+}
+
+/* When hovering over the card, move only the card-body up a little more */
+.card:hover .card-body {
+    transform: translateY(-5px); /* Moves the card-body slightly more up */
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Outfit", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+main {
+    flex: 1;
+}
+html{
+    font-size: 14px;
+}
+
+
+
+
+.custom-breadcrumb {
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.breadcrumb-link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    color: #0d6efd;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+    background: #0d6efd;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
+}
+
+.breadcrumb-item i {
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    border-radius: 1rem;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #0f2027, #2c5364);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+.form-control {
+    border-radius: 12px;
+}
+.card {
+    border-radius: 16px;
+}
+.btn-primary {
+    border-radius: 12px;
+    font-weight: 600;
+}
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+>>>>>>> dfbf8a08ebd38d8e8e8caeb735fcc9b1ad2b644f
 }
