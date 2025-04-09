@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from http.client import HTTPResponse
 import json
 from django.http import JsonResponse
@@ -116,7 +115,6 @@ def collectionproduct(request,cname,pname):
         messages.error("No Such Category Found!")
         return redirect('collection')
     
-=======
 from http.client import HTTPResponse
 import json
 from django.http import JsonResponse
@@ -234,5 +232,4 @@ def collectionproduct(request,cname,pname):
         messages.error("No Such Category Found!")
         return redirect('collection')
     
->>>>>>> dfbf8a08ebd38d8e8e8caeb735fcc9b1ad2b644f
     
