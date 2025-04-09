@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: shopkart-django
+    env: python
+    plan: free
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn guru.wsgi:application"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: shopkart-db
+          property: connectionString
+      - key: SECRET_KEY
+        sync: false
+      - key: DEBUG
+        value: False
+
+databases:
+  - name: shopkart-db
+    plan: free
