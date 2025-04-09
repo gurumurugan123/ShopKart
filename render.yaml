@@ -4,7 +4,9 @@ services:
     env: python
     plan: free
     buildCommand: "./build.sh"
-    startCommand: "gunicorn guru.wsgi:application"
+    startCommand: gunicorn guru.wsgi:application
+
+
     envVars:
       - key: DATABASE_URL
         fromDatabase:
